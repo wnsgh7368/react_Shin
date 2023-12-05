@@ -1,0 +1,15 @@
+.app-container {
+    display: flex;
+    height: 100vh; /* 화면 높이 전체를 사용 */
+    background-color: rgb(248, 249, 249);
+  }
+  
+  .left-component {
+    flex: 25%;
+    background-color: rgb(248, 249, 249);
+  }
+  
+  .right-component {
+    flex: 75%;
+    background-color: rgb(248, 249, 249);
+  }

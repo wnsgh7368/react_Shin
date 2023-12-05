@@ -1,0 +1,133 @@
+.right-component {
+    flex: 75%;
+    background-image: url('../../img/myphoto.jpg'); /* 이미지 경로에 따라 수정 */
+    background-size: cover; /* 배경 이미지를 컴포넌트에 맞게 cover로 설정 */
+    background-position: center; /*배경 이미지를 가운데 정렬*/
+    color: white; /* 텍스트 색상을 밝은 배경에 맞게 설정 */
+    /* padding: 20px; */
+  }
+  
+/*--------------------버튼--------------------*/
+  .buttons-coll {
+    height: 90px;
+    width: 490px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 좌측 정렬 */
+    background-color: rgb(248, 249, 249);
+    margin: 0;
+    border-radius: 0 0 20px 0;
+    }
+  button {
+    margin: 0 10px;
+  }
+  .custom-btn {
+    padding: 10px 25px;
+    font-family: var(--font-Kdam);
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .btn-3 {
+    width: 100px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+
+  .custom-btn.last-btn {
+    margin-right: 15px; /* 가장 오른쪽 버튼과 버튼 div 사이의 오른쪽 마진을 조절하는 부분 */
+  }
+
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #000;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+/* ----------------------------------------*/
+  
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px); /* 페이지가 나타날 때 약간의 이동 효과 추가 */
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.your-page-content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}

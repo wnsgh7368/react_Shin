@@ -1,0 +1,62 @@
+.left-component {
+    flex: 25%;
+    color: black; /* 텍스트 색상을 밝은 배경에 맞게 설정 */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative; /* 부모 요소를 relative로 설정 */
+  }
+
+  .rotated-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: black;
+    font-size: 30px;
+  }
+  
+.header{
+  flex: 50%; 
+  display: flex;
+  color: black;
+}
+
+.main {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  font-family: var(--font-Orbit);
+
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+
+.footer {
+  flex: 5%; 
+  display: flex;
+  justify-content: end;
+  color: black;
+}
+
+.footer div {
+  margin-top: 30%;
+}
+
+.main:hover {
+  transform: translateY(-5px); /* 마우스 호버 시 애니메이션 효과 적용 */
+  font-weight: bold; /* 마우스 호버 시 두껍게 */
+}
+
+.icon {
+  width: 32px; /* 아이콘의 너비 */
+  height: 32px; /* 아이콘의 높이 */
+  margin-right: 10px;
+}
+
+.myPage-text {
+  font-size: 26px; /* HOME 텍스트의 글자 크기 */
+  font-family: var(--font-Kdam);
+}

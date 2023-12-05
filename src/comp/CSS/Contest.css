@@ -1,0 +1,22 @@
+.poster {
+
+    background-image: url("../img/poster.jpg");
+    background-size: cover; /* 배경 이미지를 컴포넌트에 맞게 cover로 설정 */
+    background-position: center; 
+
+    margin-top: 150px;
+    margin-left: 200px;
+
+    width: 400px;
+    height: 600px;
+
+    float: left;
+    /* display: inline-block; */
+}
+
+.ex {
+    margin-top: 250px;
+    margin-left: 700px;
+    font-size: 20px;
+    font-family: var(--font-Orbit);
+}

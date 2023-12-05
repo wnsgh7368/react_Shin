@@ -1,0 +1,10 @@
+.volunteer {
+    background-image: url('../img/volunteer.jpg');
+    background-size: cover;
+    background-position: center; 
+
+    height: 917px;
+    width: 900px;
+
+    margin-left: 350px;
+}

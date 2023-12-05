@@ -1,0 +1,23 @@
+.main-page {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  .main-image {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .rotated-text {
+    writing-mode: vertical-lr; /* 90도 회전 스타일 */
+    transform: rotate(180deg); /* 추가로 회전 시 필요한 경우 */
+    position: absolute; /* 위치 조절을 위해 절대 위치 설정 */
+    left: 50%; /* 가운데 정렬을 위해 왼쪽 위치 지정 */
+    top: 50%; /* 가운데 정렬을 위해 위쪽 위치 지정 */
+    transform-origin: bottom left; /* 회전 중심 설정 */
+    color: white; /* 텍스트 색상 설정 */
+    font-size: 18px; /* 적절한 텍스트 크기 설정 */
+  }

@@ -1,0 +1,60 @@
+.card1 {
+    background-image: url("../img/datascience.jpg");
+    background-size: cover; /* 배경 이미지를 컴포넌트에 맞게 cover로 설정 */
+    background-position: center; 
+
+
+    width: 300px;
+    height: 500px;
+    background-color: beige;
+    border-radius: 20px;  
+
+    display: inline-block;
+    margin: -30px;
+    margin-top: 200px;
+    margin-left: 350px;
+    transition: transform 1s ease;
+}
+
+.card2 {
+    background-image: url("../img/AI.jpg");
+    background-size: cover; /* 배경 이미지를 컴포넌트에 맞게 cover로 설정 */
+    background-position: center; 
+
+
+    width: 300px;
+    height: 500px;
+    background-color: beige;
+    border-radius: 20px;  
+
+    display: inline-block;
+    margin: -30px;
+    transition: transform 1s ease;
+}
+
+.card3 {
+    background-image: url("../img/sportsdata.jpg");
+    background-size: cover; /* 배경 이미지를 컴포넌트에 맞게 cover로 설정 */
+    background-position: center; 
+
+
+    width: 300px;
+    height: 500px;
+    background-color: beige;
+    border-radius: 20px;  
+
+    display: inline-block;
+    margin: -30px;
+    transition: transform 1s ease;
+}
+
+.card1:hover {
+    transform: translateY(-40px);
+}
+.card2:hover {
+    transform: translateY(-40px);
+
+}
+.card3:hover {
+    transform: translateY(-40px);
+}
